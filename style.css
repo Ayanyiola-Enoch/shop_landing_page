@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* overflow-x: hidden; */
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 40px;
+    /* position: fixed; */
+    align-items: center;
+    width: 100%;
+    background-color: rgba(128, 0, 128, 0.493);
+    transform: none;
+}
+.nav_link{
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+}
+section{
+    width: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+}
+nav ul li a{
+    color: white;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+}
+nav .header h2 a{
+    color: white;
+    transition: 1.5s;
+}
+nav .toggle img{
+    display: none;
+    cursor: pointer;
+}
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+}
+span{
+    color: black;
+    font-size: 33px;
+}
+.part1{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+.part1 h1{
+    font-size: 40px;
+    color: rgba(128, 0, 128, 0.712);
+    padding-bottom: 19px;
+}
+
+.part2 img{
+    width: 100%;
+    height: 100vh;
+}
+.part1 a .btn{
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 3.5px;
+    transition: 1s;
+}
+.part1 a .btn1{
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: #242424;
+    color: white;
+    border: none;
+    border-radius: 3.6px;
+    cursor: pointer;
+    transition: 1s;
+}
+.part1 a .btn:hover{
+    background-color:rgba(128, 0, 128, 0.712);
+    color: white;
+    border: none;
+    border-radius: 3.5px;
+}
+
+
+@media screen and (max-width:467px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .nav_link{
+        /* flex-direction: column; */
+        display: none;
+        position: fixed;
+        height: 100%;
+        top: 75px;
+        right: 20px;
+    }
+    ul.nav_link li{
+        padding: 5px;
+        font-weight: 500;
+    }
+
+    nav .toggle img{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    nav .toggle img:hover{
+        background-color:#242424;
+    }
+    .hero{
+        padding: 30px;
+        text-align: center;
+        width: 100%;
+        display: block;
+        background: linear-gradient(to left, rgba(53, 51, 51, 0.397)(128, 128, 128, 0.397)(128, 128, 128, 0.397)), url(/fash3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .part1{
+        margin: 150px 0px;
+        padding: 0;
+        text-align: left;
+    }
+     .part1 h1{
+       color: black;
+        font-size: 20px;
+        /* text-align: center;  */
+    }
+    .part1 span{
+        font-size: 20px;
+
+    }
+    .part1 a .btn{
+        margin-top: 10px;
+        width: 100%;
+       padding: 20px;
+    }
+    .part1 a .btn1{
+       padding: 20px;
+       width: 100%;
+    }
+    .part2{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
